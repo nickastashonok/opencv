@@ -35,7 +35,7 @@ def generate():
            '-DANDROID_ABI=arm64-v8a',
            '-DCMAKE_BUILD_TYPE=Release',
            '-DCMAKE_TOOLCHAIN_FILE=%s' % str(ndk_path / 'build' / 'cmake' / 'android.toolchain.cmake'),
-           '-DANDROID_PLATFORM=android-27',
+           '-DANDROID_PLATFORM=android-21',
            '-DANDROID_ARM_NEON=TRUE',
            '-DANDROID_TOOLCHAIN=clang',
            '-DANDROID_NATIVE_API_LEVEL=27',
