@@ -511,7 +511,6 @@ std::vector<char> AVIReadContainer::readFrame(frame_iterator it)
 
     RiffChunk chunk;
     *(m_file_stream) >> chunk;
-    CV_Assert(chunk.m_size <= 0xFFFF);
 
     std::vector<char> result;
 
